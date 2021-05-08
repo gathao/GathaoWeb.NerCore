@@ -1,0 +1,132 @@
+.navbar {
+    background-color:#3f4f3f;
+    padding: .5rem 1rem;
+    border-radius: .5em;
+}
+
+body {
+    background: #eeeeee;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    color: #00153f;
+    font-family: Meiryo, "游ゴシック体", YuGothic, "YuGothic M", sans-serif;
+    font-size: 90%;
+}
+
+.card-content {
+    background: #4f6f4f;
+    border-radius: 1em;
+    text-decoration: none;
+}
+
+.fa-twitter,
+.fa-parking {
+    color: #4f6f4f;
+    text-decoration: none;
+}
+
+.footer {
+    display: block;
+}
+
+.swiper-container{
+    width: 100%;
+}
+
+.swiper-slide h2 {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+ 
+.swiper-slide img {
+     width: 100%;
+}
+
+.illust-list-item {
+    width: 100%;
+    margin-top: 2em;
+    padding-bottom: 1em;
+    background: url(../img/minus.png) repeat-x left bottom;
+}
+
+.illust-list-item figure {
+    display: block;
+    text-align: left;
+}
+
+.illust-list-item img {
+    max-width: 100%;
+    height: atuo;
+}
+
+.illut-item-footer ul {
+    display: inline;
+    padding-inline-start: 0px;
+}
+
+.illut-item-footer li {
+    display: inline;
+    text-decoration: underline;
+}
+
+.margin-top15 {
+    margin-top: 15px;
+}
+
+.margin-top30 {
+    margin-top: 30px;
+}
+
+.margin-bottom15 {
+    margin-bottom: 15px;
+}
+
+.margin-bottom30 {
+    margin-bottom: 30px;
+}
+
+.card-text-3d-art {
+    color: white;
+}
+
+.card-text-overview {
+    color: white;
+    font-size: 1em;
+}
+
+.card-text-memo {
+    color: white;
+    font-size: 0.8em;
+    margin-bottom: 0em;
+}
+
+.card-text-caption {
+    color: white;
+    font-size: 0.8em;
+    margin-bottom: 0em;
+    margin-top: 0.5em;
+    margin-left: 1.2em;
+    margin-right: 1.2em;
+}
+
+.model-viewer {
+    width: 80%;
+    height: 640px;
+    background-color: silver;
+}
+
+.multi-lines {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.text-indent1 {
+    text-indent: 1em;
+}
+
+.border-line {
+    width: 100%;
+    padding-bottom: 1em;
+    background: url(../img/minus.png) repeat-x left bottom;
+}
