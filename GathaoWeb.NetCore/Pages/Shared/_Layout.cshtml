@@ -4,44 +4,43 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gathao.web</title>
+    <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
     <link rel="stylesheet" href="~/css/style.css" />
 
     <!-- OPG twitter用 -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="https://gathao.github.io/">
     <meta name="twitter:image" content="xxx.png">
-    <meta name="twitter:title" content="Gathao.web">
+    <meta name="twitter:title" content="@ViewData["Title"]">
     <meta name="twitter:description" content="作ったものとか">
     <meta name="twitter:site" content="@@nd2001">
 
     <!-- OPG その他SNS用 -->
-    <meta property="og:title" content="Gathao.web">
+    <meta property="og:title" content="@ViewData["Title"]">
     <meta property="og:type" content="website">
     <meta property="og:description" content="作ったものとか">
     <meta property="og:url" content="https://gathao.github.io/">
     <meta property="og:image" content="xxx.png">
-    <meta property="og:site_name" content="Gathao.web">
+    <meta property="og:site_name" content="@ViewData["Title"]">
 
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- import -->
-    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="~/css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="~/css/style.css" rel="stylesheet">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link href="./css/swiper.min.css" rel="stylesheet">
+    <link href="~/css/swiper.min.css" rel="stylesheet">
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="~/js/jquery-3.6.0.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
 
 </head>
 <body>
     <div class="container">
         <header>
             <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="https://gathao.github.io/">Gathao.web</a>
+                <a class="navbar-brand" href="https://gathao.github.io/">@ViewData["Title"]</a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -64,24 +63,24 @@
                 </div>
             </nav>
             @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-                    <div class="container">
-                        <a class="navbar-brand" asp-area="" asp-page="/Index">Gathao.web</a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                                aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                            <ul class="navbar-nav flex-grow-1">
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>*@
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-page="/Index">@ViewData["Title"]</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>*@
         </header>
     </div>
     <div class="container">
@@ -101,17 +100,10 @@
                     <i class="fas fa-parking fa-2x"></i>
                 </a>
             </div>
-            <p class="text-muted">© 2021-2021 <a href="http://gathao.github.io/">Gathao.web</a></p>
+            <p class="text-muted">© 2021-2021 <a href="http://gathao.github.io/">@ViewData["Title"]</a></p>
         </footer>
-        @*<footer class="border-top footer text-muted">
-            <div class="container">
-                &copy; 2021 - GathaoWeb.NetCore - <a asp-area="" asp-page="/Privacy">Privacy</a>
-            </div>
-        </footer>*@
     </div>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @RenderSection("Scripts", required: false)

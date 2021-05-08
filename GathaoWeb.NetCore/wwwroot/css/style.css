@@ -28,6 +28,7 @@ body {
 
 .footer {
     display: block;
+    text-align: center !important;
 }
 
 .swiper-container{
