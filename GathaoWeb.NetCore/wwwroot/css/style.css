@@ -1,7 +1,8 @@
 .navbar {
-    background-color:#3f4f3f;
+    background-color: #3f4f3f;
     padding: .5rem 1rem;
     border-radius: .5em;
+    color: white;
 }
 
 body {

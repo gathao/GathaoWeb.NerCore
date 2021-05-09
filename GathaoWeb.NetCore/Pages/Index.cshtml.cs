@@ -19,7 +19,6 @@ namespace GathaoWeb.NetCore.Pages
 
         public void OnGet()
         {
-            ViewData["Title"] = "Gathao.web";
         }
     }
 }

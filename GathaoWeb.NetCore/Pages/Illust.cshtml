@@ -1,0 +1,59 @@
+﻿@page
+@model GathaoWeb.NetCore.Pages.IllustModel
+@{
+    ViewData["Title"] = "Gathao.web";
+}
+
+<!-- 写真ポップアップ -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+
+<script>
+    lightbox.option({
+        'resizeDuration': 0,
+        'imageFadeDuration': 0,
+        'wrapAround': true
+    })
+</script>
+
+<div class="container margin-top15">
+
+    <div class="row">
+        <div class="col">
+            <h1>Illust</h1>
+            <p>つれづれ</p>
+        </div>
+    </div>
+
+    <article class="illust-list-item">
+        <figure>
+            <a data-lightbox="illusts" href="https://lh3.googleusercontent.com/63e6Yey0izxWCOyf4SEdafV_wjGRzRssmngIfr6J_Xn_fWDpaz8F1RHlyKZyN4_rCrwBoQN-HCzXOsJliV85m5S5x8VRwxHgL-st9_BNtmdXn4sElHoUZS9cmL0KZpVepJUR2WdzRtU=w2400?source=screenshot.guru">
+                <img src="https://lh3.googleusercontent.com/63e6Yey0izxWCOyf4SEdafV_wjGRzRssmngIfr6J_Xn_fWDpaz8F1RHlyKZyN4_rCrwBoQN-HCzXOsJliV85m5S5x8VRwxHgL-st9_BNtmdXn4sElHoUZS9cmL0KZpVepJUR2WdzRtU=w2400?source=screenshot.guru" />
+            </a>
+        </figure>
+        <div class="illut-item-footer">
+            ジャンル：
+            <ul>
+                <li>fanart</li>
+                <li>voiceroid/cevio</li>
+            </ul>
+        </div>
+    </article>
+
+    <article class="illust-list-item">
+        <figure>
+            <a data-lightbox="illusts" href="https://lh3.googleusercontent.com/hy1f2hpr414wLaUkgkiZzdg66sF8Ny4gcoztbLKs5r-RgER0lwnNb3B5hBkzB93NQIO5CNI0yEmHca60Nhn8yPQq-Md_AZ59og3VhCEJ0or6b9YsWKU5Fj8JuOVCZq2KE_Yytdy18w8=w2400?source=screenshot.guru">
+                <img src="https://lh3.googleusercontent.com/hy1f2hpr414wLaUkgkiZzdg66sF8Ny4gcoztbLKs5r-RgER0lwnNb3B5hBkzB93NQIO5CNI0yEmHca60Nhn8yPQq-Md_AZ59og3VhCEJ0or6b9YsWKU5Fj8JuOVCZq2KE_Yytdy18w8=w2400?source=screenshot.guru" />
+            </a>
+        </figure>
+        <div class="illut-item-footer">
+            ジャンル：
+            <ul>
+                <li>fanart</li>
+                <li>voiceroid/cevio</li>
+            </ul>
+        </div>
+    </article>
+
+</div>
