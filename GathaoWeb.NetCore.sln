@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GathaoWeb.NetCore", "GathaoWeb.NetCore\GathaoWeb.NetCore.csproj", "{FF7C0922-6377-4686-9BAE-29C48BA14C47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GathaoWeb.NetCore", "GathaoWeb.NetCore\GathaoWeb.NetCore.csproj", "{F4EBBC8D-BC80-462A-928E-A0C248188BC0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FF7C0922-6377-4686-9BAE-29C48BA14C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF7C0922-6377-4686-9BAE-29C48BA14C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF7C0922-6377-4686-9BAE-29C48BA14C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF7C0922-6377-4686-9BAE-29C48BA14C47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4EBBC8D-BC80-462A-928E-A0C248188BC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4EBBC8D-BC80-462A-928E-A0C248188BC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4EBBC8D-BC80-462A-928E-A0C248188BC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4EBBC8D-BC80-462A-928E-A0C248188BC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {B4945188-A500-46F5-9D28-A34094101408}
+		SolutionGuid = {98D51FF0-8057-4107-95D9-91174D851974}
 	EndGlobalSection
 EndGlobal
