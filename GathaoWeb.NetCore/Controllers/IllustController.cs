@@ -1,41 +1,28 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using GathaoWeb.NetCore.Models;
+using GathaoWeb.NetCore.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace GathaoWeb.NetCore.Controllers
 {
     public class IllustController : Controller
     {
+        private readonly IConfiguration Configuration;
+
         List<IllustListItem> illustItems;
 
-        public IActionResult Index()
+        public IllustController(IConfiguration configuration)
         {
-            illustItems = new List<IllustListItem>();
+            Configuration = configuration;
+        }
 
+        public async Task<IActionResult> Index()
+        {
+            var key = Configuration["APIKeys"];
 
-            illustItems.Add(new IllustListItem()
-            {
-                Id = 0,
-                ImageFilePath = "https://lh3.googleusercontent.com/63e6Yey0izxWCOyf4SEdafV_wjGRzRssmngIfr6J_Xn_fWDpaz8F1RHlyKZyN4_rCrwBoQN-HCzXOsJliV85m5S5x8VRwxHgL-st9_BNtmdXn4sElHoUZS9cmL0KZpVepJUR2WdzRtU=w2400?source=screenshot.guru",
-                Tags = new List<string>() {
-                    "fanart",
-                    "voiceroid/cevio"
-                }
-            });
-
-            illustItems.Add(new IllustListItem()
-            {
-                Id = 0,
-                ImageFilePath = "https://lh3.googleusercontent.com/hy1f2hpr414wLaUkgkiZzdg66sF8Ny4gcoztbLKs5r-RgER0lwnNb3B5hBkzB93NQIO5CNI0yEmHca60Nhn8yPQq-Md_AZ59og3VhCEJ0or6b9YsWKU5Fj8JuOVCZq2KE_Yytdy18w8=w2400?source=screenshot.guru",
-                Tags = new List<string>() {
-                    "fanart",
-                    "umamusume"
-                }
-            });
-
+            illustItems = await GathaoWebContentsService.GetIllustItems();
             ViewData["IllustItems"] = illustItems;
 
             return View();
