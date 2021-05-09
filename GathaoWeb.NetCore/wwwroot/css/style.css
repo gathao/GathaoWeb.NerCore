@@ -32,7 +32,7 @@ body {
     text-align: center !important;
 }
 
-.swiper-container{
+.swiper-container {
     width: 100%;
 }
 
@@ -40,9 +40,9 @@ body {
     margin-top: .5rem;
     margin-bottom: .5rem;
 }
- 
+
 .swiper-slide img {
-     width: 100%;
+    width: 100%;
 }
 
 .illust-list-item {
@@ -58,8 +58,9 @@ body {
 }
 
 .illust-list-item img {
-    max-width: 100%;
-    height: atuo;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
 }
 
 .illut-item-footer ul {

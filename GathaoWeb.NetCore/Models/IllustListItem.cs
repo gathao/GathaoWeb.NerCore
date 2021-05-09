@@ -5,14 +5,14 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GathaoWeb.NetCore.Model
+namespace GathaoWeb.NetCore.Models
 {
     public class IllustListItem
     {
         public int Id { get; set; }
 
-        public string imageFilePath { get; set; }
+        public string ImageFilePath { get; set; }
 
-        public List<string> tags { get; set; }
+        public List<string> Tags { get; set; }
     }
 }
