@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using GathaoWeb.NetCore.Commons;
 using GathaoWeb.NetCore.Models;
 using Microsoft.Azure.Documents;
 using Microsoft.Azure.Documents.Client;
@@ -23,7 +24,7 @@ namespace GathaoWeb.NetCore.Services
 
             try
             {
-                docClient = new DocumentClient(new Uri(APIKeys.CosmosEndpointUrl), APIKeys.CosmosAuthKey);
+                docClient = new DocumentClient(new Uri(Configurations.CosmosEndpointUrl), Configurations.CosmosAuthKey);
 
                 // Create the database - this can also be done through the portal
                 await docClient.CreateDatabaseIfNotExistsAsync(new Database { Id = databaseName });

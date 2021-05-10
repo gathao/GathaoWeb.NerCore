@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using GathaoWeb.NetCore.Commons;
 using GathaoWeb.NetCore.Models;
 using GathaoWeb.NetCore.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -9,19 +10,14 @@ namespace GathaoWeb.NetCore.Controllers
 {
     public class IllustController : Controller
     {
-        private readonly IConfiguration Configuration;
-
         List<IllustListItem> illustItems;
 
-        public IllustController(IConfiguration configuration)
+        public IllustController()
         {
-            Configuration = configuration;
         }
 
         public async Task<IActionResult> Index()
         {
-            var key = Configuration["APIKeys"];
-
             illustItems = await GathaoWebContentsService.GetIllustItems();
             ViewData["IllustItems"] = illustItems;
 
