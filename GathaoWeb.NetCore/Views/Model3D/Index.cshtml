@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<script type="module" src="https://unpkg.com/@@google/model-viewer/dist/model-viewer.min.js"></script>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col">
+            <h1>3DArt</h1>
+            <p>Blenderでつくったもの</p>
+
+            <div class="row">
+
+                <div class="col col-6 col-sm-4 margin-top15">
+                    <a class="card card-content" asp-area="" asp-controller="Model3D" asp-action="Honoka">
+                        <img class="card card-content" src="~/3dmodels/thumbs/tumb_honoka.png" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-text-3d-art">綿巻ほのか</h5>
+                            <p class="card-text-3d-art">オリキャラの3Dモデルです</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col col-6 col-sm-4 margin-top15">
+                    <a class="card card-content" asp-area="" asp-controller="Model3D" asp-action="Kiritan">
+                        <img class="card card-content" src="~/3dmodels/thumbs/tumb_kiritan.png" alt="image">
+                        <div class="card-body">
+                            <h5 class="card-text-3d-art">東北きりたん</h5>
+                            <p class="card-text-3d-art">東北地方応援キャラクター「東北きりたん」の3Dモデルです</p>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
