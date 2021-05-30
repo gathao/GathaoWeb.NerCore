@@ -12,5 +12,15 @@ namespace GathaoWeb.NetCore.Controllers
         {
             return View();
         }
+
+        public IActionResult Honoka()
+        {
+            return View();
+        }
+
+        public IActionResult Kiritan()
+        {
+            return View();
+        }
     }
 }
