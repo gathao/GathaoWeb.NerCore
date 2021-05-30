@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Gathao.web";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Games</h1>
+            <p>これまで作ったゲームです</p>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col col-6 col-sm-6 margin-top15">
+            <a class="card card-content" asp-area="" asp-controller="Game" asp-action="YukariHomerun">
+                <p class="card-text-caption">無料プレイ</p>
+                <img class="card card-content" src="~/img/game/thumbs/yukari_homerun_thumb.png" alt="image">
+                <div class="card-body">
+                    <h5 class="card-text-3d-art">ゆかりさんのホームラントライアル！</h5>
+                    <p class="card-text-overview">ゆかりさんを操作してホームランを打とう！</p>
+                    <p class="card-text-memo">#ミニゲーム #達人向け</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-6 col-sm-6 margin-top15">
+            <a class="card card-content" asp-area="" asp-controller="Game" asp-action="Suzumari">
+                <p class="card-text-caption">Boothで販売中！</p>
+                <img class="card card-content" src="~/img/game//thumbs/suzumari.png" alt="image">
+                <div class="card-body">
+                    <h5 class="card-text-3d-art">スズとマリの冒険</h5>
+                    <p class="card-text-3d-art">敵やアイテムに憑依して仕掛けを解こう！</p>
+                    <p class="card-text-memo">#憑依型アクションパズル</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-6 col-sm-6 margin-top15">
+            <a class="card card-content" asp-area="" asp-controller="Game" asp-action="VoiceRoid">
+                <p class="card-text-caption">無料プレイ</p>
+                <img class="card card-content" src="~/img/game/thumbs/voiceroid.png" alt="image">
+                <div class="card-body">
+                    <h5 class="card-text-3d-art">VOICE：ROID</h5>
+                    <p class="card-text-3d-art">アイテムで強化されていくゆかりさんとあかり草をやっつけよう！</p>
+                    <p class="card-text-memo">#ミニゲーム #メトロイドヴァニラ</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
