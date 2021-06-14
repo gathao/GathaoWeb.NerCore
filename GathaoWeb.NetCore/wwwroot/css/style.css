@@ -133,3 +133,24 @@ body {
     padding-bottom: 1em;
     background: url(../img/minus.png) repeat-x left bottom;
 }
+
+.video {
+    width: 100%;
+    text-align: center;
+}
+
+.game-play-link {
+    text-align: center;
+}
+
+.game-play-link a {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #da6c24;
+    text-decoration: none;
+}
+
+.game-play-link a:hover {
+    color: #da6c24;
+    text-decoration: underline;
+}
