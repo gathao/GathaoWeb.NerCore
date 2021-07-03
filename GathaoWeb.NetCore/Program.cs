@@ -21,10 +21,5 @@ namespace GathaoWeb.NetCore
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
                 .UseUrls("http://*:5000/");
-            //Host.CreateDefaultBuilder(args)
-            //    .ConfigureWebHostDefaults(webBuilder =>
-            //    {
-            //        webBuilder.UseStartup<Startup>();
-            //    });
     }
 }
