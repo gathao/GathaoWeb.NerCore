@@ -71,7 +71,8 @@ namespace GathaoWeb.NetCore.Services
                 illuts.AddRange(queryResults);
             }
 
-            return illuts;
+            // 降順ソート
+            return illuts.OrderByDescending(illust => illust.Id).ToList();
         }
     }
 }
